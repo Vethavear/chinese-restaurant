@@ -1,0 +1,165 @@
+$bg-color: #631800;
+
+//smartphones
+@media (max-width: 669px) {
+
+  * {
+    overflow-x: hidden;
+  }
+
+  nav {
+    img {
+      display: none;
+    }
+
+    width:100vw;
+
+    ul {
+      width: 100%;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+
+      li {
+        padding: 0.05rem;
+
+        a {
+          font-size: 1.0rem;
+        }
+      }
+    }
+  }
+
+  .showcase-content {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  #menu {
+    .menu-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #gallery {
+    .gallerycontainer {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #contact {
+    flex-direction: column;
+
+    .mediapanel {
+      .media {
+        padding-top: 1rem;
+      }
+
+      flex-direction: column;
+
+      .newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .input {
+          text-align: center;
+          border: 1px solid $bg-color;
+          margin-bottom: 1px;
+
+        }
+      }
+
+      .icons {
+        display: flex;
+        width: 100% !important;
+        justify-content: space-evenly !important;
+
+        i {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  nav {
+
+    width: 100vw;
+
+    ul {
+      width: 100%;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+
+      li {
+        padding: 0.05rem;
+
+        a {
+          font-size: 1.0rem;
+        }
+      }
+    }
+  }
+
+  .showcase-content {
+    font-size: 1.2rem !important;
+
+    a {}
+  }
+
+  #menu {
+    .menu-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #about {
+    flex-direction: column;
+
+    h1 {
+      padding-top: 3rem;
+    }
+  }
+
+  #contact {
+    flex-direction: column;
+
+    .mediapanel {
+
+      .newsletter {
+
+        .input {
+          text-align: center;
+          border: 1px solid $bg-color;
+          margin-bottom: 1px;
+        }
+      }
+
+      .icons {
+        display: flex;
+        width: 100% !important;
+        justify-content: space-evenly !important;
+
+        i {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 5rem;
+  }
+}
